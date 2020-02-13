@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="scss/index.scss" />
+    <link rel="stylesheet" href="scss/index.css" />
+    <link rel="stylesheet" href="scss/main.css">
+
+    <title>Rasim</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">  
+       
+        <nav>
+          <h2 class="header__container-logo">____Summary</h2>
+            <ul class="nav-links">
+            <li class="li"><a href="#portfolio">Портфолио</a></li>
+            <li class="li"><a href="#skills">Навыки</a></li>
+            <li class="li"><a href="#footer">Связаться</a></li>
+          </ul>
+          <div class="burger">
+             <div class="line line1"></div>
+             <div class="line line2"></div>
+             <div class="line line3"></div>
+        </div>    
+        </nav>
+        
+        <div class="font-size">
+            <h1 class="header__container-title">Ahmedshin Rasim</h1> <br>
+            <h4 class="phone">Ном: +998(90)348-71-81</h4> <br>
+            <h4>Front-end</h4>
+            <!-- <p class="header__container-profession"> <span class="delete">Моя цель стать хорошим программистом.</span>
+            Навыки: HTML, CSS( SCSS )-методология БЭМ, Адаптивная верстка, фраемворк( Bootstrap ), Базовый JavaScript( React.js ), Adobe Photoshop
+            <span class="delete"> Опыта работы в данный момент нету, очень хочется его получить.
+            Быстро нахожу общий язык, развиваюсь, 
+            но хочется уже все попробовать на деле.  ( Целеустремленный ).
+          </span >
+            </p> -->
+            <button class="header__container-btn" id="btn" >Связаться</button>
+        </div>
+        <div class="header__container-modal" id="mymodal">
+          <div class="header__container-modal-content">
+            <span class="header__container-modal-close" id="close">&times;</span>
+            <h3>Соц.сети</h3>
+                   <div class="header__container-social-networks">
+              <a href="https://www.instagram.com/dangerous_2_0_0_2__/?hl=ru"><img class="iconWidth" src="img/instagram.png" alt="instagram"></a>
+              <a href="https://t.me/Danger_0_us"><img class="iconWidth" src="img/telegram.png" alt="telegram"></a>
+              <a href="https://vk.com/id296473225"><img class="iconWidth" src="img/vk.png" alt="vkontakte"></a>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </header>
+    <section id="portfolio" class="portfolio">
+      <div class="portfolio__container">
+        <h2 class="portfolio__container-title">Портфолио</h2>
+        <div class="portfolio__container-porfolio">
+
+          <div  class="portfolio__container-porfolio-block1 portfolio-block">
+           <span  id="closePorfolio" class="square"> <a href="https://rasim1706.github.io/french/"><img class="imgPorfolio" src="img/work1.png" alt="french"></a>
+            <h6>Адаптивная</h6>
+            <h5>French Cuisine</h5>         
+          </span>
+            <div id="portfolio-open" class="portfolio__container-porfolio-block1-details">
+              <p class="wd">Эта моя первая работа после изучения Html,CSS и фраемворка Bootstrap.
+                Проект мой собственный тематику придумал сам.
+              </p>
+            </div>
+            <a class="portfolio-block-btn-portfolio" href="https://rasim1706.github.io/french/">Посмотреть</a> <br>
+          <button id="btnPortfolio" onclick="openBtn()" class="portfolio-block-btn-details">Подробнее</button>  
+          </div>
+          <div class="borderBotomm"></div>
+
+          <div class="portfolio__container-porfolio-block2 portfolio-block">
+           <img src="" alt="">
+            <h5>В разработке...</h5>
+            <a class="portfolio-block-btn-portfolio" href="">Посмотреть</a>
+          </div>
+          <div class="borderBotomm"></div>
+
+          <div class="portfolio__container-porfolio-block3 portfolio-block">
+            <img src="" alt="">
+            <h5>В разработке...</h5>
+            <a class="portfolio-block-btn-portfolio"  href="">Посмотреть</a>
+          </div>
+          <div class="borderBotomm"></div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <div class="skills__container">
+        <h2 class="skills__container-title">Навыки</h2>
+        <p class="skills__container-experience"> Опыта работы в данный момент нету, очень хочется его получить.</p>
+
+        <div class="skills__container-skills">
+          <div class="skills__container-skills-skill">
+            <img src="" alt="">
+            <h3> <span style="color: orange;">Html</span> - <span style="color: #0d418f;">CSS</span></h3>
+            <p>Bootstrap <br> Адаптивная верстка <br> Методология BEM <br> Предпроцессор SCSS.</p>
+          </div>
+
+          <div class="skills__container-skills-skill">
+            <img src="" alt="">
+            <h3 style="color: #d6d61f;">JS</h3>
+            <p>Базовый JS. <br> Основы JS.</p>
+          </div>
+
+          <div class="skills__container-skills-skill">
+            <img src="" alt="">
+            <h3 style="color: #003854;">React.js</h3>
+            <p>Базовый React. <br> Основы React.js.</p>
+          </div>
+        </div>
+      </div> 
+    </section>
+    <div id="footer" class="footer">
+      <div class="footer__container">
+        <h2 class="footer__container-title">Связаться</h2> 
+        <div class="footer__container-links"> 
+          <div class="footer__container-links-email">
+          <a href="mailto:dangerous200217@mail.ru"> <img src="https://cdn1.savepice.ru/uploads/2020/2/9/99fc7db79d2d023217d3b5f67e138c17-full.png" alt="mail"> dangerous200217@mail.ru</a>
+        </div>
+        <div class="footer__container-links-messanger">
+          <a href="https://www.instagram.com/dangerous_2_0_0_2__/?hl=ru"><img class="iconWidth" src="img/instagram.png" alt="instagram"></a>
+          <a href="https://t.me/Danger_0_us"><img class="iconWidth" src="img/telegram.png" alt="telegram"></a>
+          <a href="https://vk.com/id296473225"><img class="iconWidth" src="img/vk.png" alt="vkontakte"></a>
+        </div>
+      </div> 
+      </div>
+    </div>
+  </body>
+  <script src="js/script.js"></script>
+</html>
